@@ -1,0 +1,95 @@
+{
+  "version": "2.0",
+  "sourceVideo": "히어로 영상 완성본.mp4",
+  "sourceCodec": "hevc",
+  "sourceDurationSec": 30.488,
+  "sourceResolution": "1440x1080",
+  "sourceFrameRate": 30,
+  "sourceTotalFrames": 914,
+  "extraction": {
+    "sampleEveryN": 5,
+    "totalFrames": 183,
+    "effectiveFps": 6,
+    "outputResolution": "1200x900",
+    "outputCodec": "libwebp",
+    "outputQuality": 75,
+    "avgFrameSizeKB": 34.9,
+    "totalSizeMB": 6.4
+  },
+  "frameNaming": {
+    "prefix": "frame_",
+    "padZeros": 4,
+    "extension": ".webp"
+  },
+  "scenes": [
+    {
+      "id": "01_owner_leaving",
+      "startFrame": 1,
+      "endFrame": 30,
+      "beat": "expectation/loss",
+      "colorTemp": "5800K cool",
+      "description": "주인 문 나섬 — Bean 옆쪽 사이드뷰로 서 있음"
+    },
+    {
+      "id": "02_bean_alone",
+      "startFrame": 31,
+      "endFrame": 60,
+      "beat": "loneliness",
+      "colorTemp": "5500K slightly cool",
+      "description": "Bean 혼자 닫힌 문 쪽 바라봄"
+    },
+    {
+      "id": "03_bean_walks_away",
+      "startFrame": 61,
+      "endFrame": 90,
+      "beat": "turning point",
+      "colorTemp": "5200K neutral",
+      "description": "Bean 문에서 돌아 걸어감 (뒷모습)"
+    },
+    {
+      "id": "04_lick_mat_discovery",
+      "startFrame": 91,
+      "endFrame": 120,
+      "beat": "reassurance begins",
+      "colorTemp": "4500K warming",
+      "description": "Bean 이 Slow-Lick Tile 발견, 다가감"
+    },
+    {
+      "id": "05_lick_mat_happy",
+      "startFrame": 121,
+      "endFrame": 150,
+      "beat": "joy",
+      "colorTemp": "4000K warm amber",
+      "description": "Bean 혀로 핥음, 꼬리 올라감"
+    },
+    {
+      "id": "06_bed_approach",
+      "startFrame": 151,
+      "endFrame": 170,
+      "beat": "golden hour",
+      "colorTemp": "3800K golden",
+      "description": "Bean 이 Burrow Bed 쪽으로 접근 (165 근처 페이드 전환 지점)"
+    },
+    {
+      "id": "07_bed_sleep",
+      "startFrame": 171,
+      "endFrame": 183,
+      "beat": "belonging/peace",
+      "colorTemp": "3300K deep warm",
+      "description": "Bean Burrow Bed 에서 평화롭게 잠듦, 미소",
+      "loopable": true
+    }
+  ],
+  "endOverlay": {
+    "text": "He has it, too.",
+    "fadeStartProgress": 0.93,
+    "fontFamily": "Fraunces",
+    "fontStyle": "italic"
+  },
+  "notes": [
+    "프레임 183장 기준 / 6 effective fps / 30.5s 소스 영상",
+    "Frame 165 근처에서 원본에 페이드/전환이 있어 파일 크기가 작음 (9KB). 의도된 시네마틱 전환",
+    "Scene 경계는 sample 검증 기반 추정치 — Framer 에 올린 후 실제 스크롤 속도와 체감 확인하며 미세 조정 가능",
+    "모바일 최적화 (폭 ≤768px) 는 MVP 출시 후 별도 저해상도 시퀀스 생성 예정"
+  ]
+}
